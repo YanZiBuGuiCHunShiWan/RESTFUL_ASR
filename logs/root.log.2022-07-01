@@ -1,0 +1,144 @@
+2022-07-01 11:21:07,359 - INFO - checkpoint.py:14 - load_checkpoint() - Checkpoint: loading from checkpoint /home/tangtianchi/ASR_project/conf/20211025_conformer_exp/final.pt for GPU
+2022-07-01 11:21:09,821 - INFO - REST_WenetEngine.py:43 - __init__() - Model has initialized .
+2022-07-01 11:21:09,825 - INFO - server.py:33 - <module>() - server starts port 7777
+2022-07-01 11:27:58,525 - ERROR - asr_resource.py:131 - post() - file does not start with RIFF id
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 105, in post
+    audio_bytes,sr,duration_time=read_wave(filename)
+  File "./REST_Engine/VAD_Warpper.py", line 17, in read_wave
+    with contextlib.closing(wave.open(path, 'rb')) as wf:
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/wave.py", line 510, in open
+    return Wave_read(f)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/wave.py", line 164, in __init__
+    self.initfp(f)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/wave.py", line 131, in initfp
+    raise Error('file does not start with RIFF id')
+wave.Error: file does not start with RIFF id
+2022-07-01 11:27:58,527 - INFO - asr_resource.py:146 - post() - msg: file does not start with RIFF id, cost_time:0.15s
+2022-07-01 11:28:09,771 - INFO - asr_resource.py:128 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.58s
+2022-07-01 11:28:09,871 - ERROR - asr_resource.py:131 - post() - Parameter 'filename' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 78, in post
+    raise Exception(paramerr3)
+Exception: Parameter 'filename' can't be none .
+2022-07-01 11:28:09,872 - INFO - asr_resource.py:146 - post() - msg: Parameter 'filename' can't be none ., cost_time:0.05s
+2022-07-01 11:28:09,950 - ERROR - asr_resource.py:131 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-07-01 11:28:09,950 - INFO - asr_resource.py:146 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.04s
+2022-07-01 11:28:10,661 - INFO - asr_resource.py:128 - post() - text:更多的时候，不是季节拒绝了我们的热情，而是我们误解了季节的沉默。兵运，不会随便手啃你的选择。,rate:16000,code:000000,cost_time:0.68s
+2022-07-01 11:28:12,909 - INFO - asr_resource.py:128 - post() - text:那是力争上游的一种书，你值得干！笔直的枝，他的干呢，通常是把帐把高，像是加以人工词的，一丈以内，绝无旁支；它所有的支压呢，一律向上，并且紧紧靠拢，也像是加以人工，死的，成为一束，绝无横斜；一出，它的宽大的叶子，也是片片向上，几乎没有协商的，更不用说倒锤了，它的皮，光滑，而有银色的晕圈，微微泛出淡青色。,rate:16000,code:000000,cost_time:2.19s
+2022-07-01 11:28:13,069 - ERROR - asr_resource.py:131 - post() - Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 99, in post
+    MP32WAV(filename,filename_new)
+  File "./online/http/resources/asr_resource.py", line 50, in MP32WAV
+    MP3_File = AudioSegment.from_mp3(mp3_path)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/site-packages/pydub/audio_segment.py", line 796, in from_mp3
+    return cls.from_file(file, 'mp3', parameters=parameters)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/site-packages/pydub/audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/site-packages/pydub/utils.py", line 279, in mediainfo_json
+    info = json.loads(output)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2022-07-01 11:28:13,073 - INFO - asr_resource.py:146 - post() - msg: Expecting value: line 1 column 1 (char 0), cost_time:0.12s
+2022-07-01 11:28:15,791 - INFO - asr_resource.py:128 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.68s
+2022-07-01 11:28:15,825 - ERROR - asr_resource.py:131 - post() - Parameter 'speech' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 102, in post
+    raise Exception(paramerr5)
+Exception: Parameter 'speech' can't be none .
+2022-07-01 11:28:15,825 - INFO - asr_resource.py:146 - post() - msg: Parameter 'speech' can't be none ., cost_time:0.00s
+2022-07-01 11:28:15,858 - ERROR - asr_resource.py:131 - post() - Parameter 'filename' should end with *.wav or *.mp3.
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 76, in post
+    assert  filename.endswith(".wav") or filename.endswith(".mp3") or filename.endswith(".pcm"),paramerr4
+AssertionError: Parameter 'filename' should end with *.wav or *.mp3.
+2022-07-01 11:28:15,859 - INFO - asr_resource.py:146 - post() - msg: Parameter 'filename' should end with *.wav or *.mp3., cost_time:0.00s
+2022-07-01 11:28:15,883 - ERROR - asr_resource.py:131 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-07-01 11:28:15,884 - INFO - asr_resource.py:146 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-07-01 11:28:16,307 - INFO - asr_resource.py:128 - post() - text:我觉得你这个阿婆不好吃，我想吃那个，不难了。,rate:16000,code:000000,cost_time:0.40s
+2022-07-01 11:28:16,340 - ERROR - asr_resource.py:131 - post() - None space
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 66, in post
+    assert data,Nonespace
+AssertionError: None space
+2022-07-01 11:28:16,340 - INFO - asr_resource.py:146 - post() - msg: None space, cost_time:0.00s
+2022-07-01 11:28:16,553 - INFO - asr_resource.py:128 - post() - text:我觉得你说的有问题。,rate:44100,code:000000,cost_time:0.18s
+2022-07-01 16:06:36,093 - INFO - checkpoint.py:14 - load_checkpoint() - Checkpoint: loading from checkpoint /home/tangtianchi/ASR_project/conf/20211025_conformer_exp/final.pt for GPU
+2022-07-01 16:06:38,681 - INFO - REST_WenetEngine.py:43 - __init__() - Model has initialized .
+2022-07-01 16:06:38,685 - INFO - server.py:33 - <module>() - server starts port 7777
+2022-07-01 16:07:58,669 - INFO - asr_resource.py:128 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.65s
+2022-07-01 16:07:58,768 - ERROR - asr_resource.py:131 - post() - Parameter 'filename' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 78, in post
+    raise Exception(paramerr3)
+Exception: Parameter 'filename' can't be none .
+2022-07-01 16:07:58,770 - INFO - asr_resource.py:146 - post() - msg: Parameter 'filename' can't be none ., cost_time:0.05s
+2022-07-01 16:07:58,804 - ERROR - asr_resource.py:131 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-07-01 16:07:58,805 - INFO - asr_resource.py:146 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-07-01 16:07:59,543 - INFO - asr_resource.py:128 - post() - text:更多的时候，不是季节拒绝了我们的热情，而是我们误解了季节的沉默。兵运，不会随便手啃你的选择。,rate:16000,code:000000,cost_time:0.70s
+2022-07-01 16:08:01,594 - INFO - asr_resource.py:128 - post() - text:那是力争上游的一种书，你值得干！笔直的枝，他的干呢，通常是把帐把高，像是加以人工词的，一丈以内，绝无旁支；它所有的支压呢，一律向上，并且紧紧靠拢，也像是加以人工，死的，成为一束，绝无横斜；一出，它的宽大的叶子，也是片片向上，几乎没有协商的，更不用说倒锤了，它的皮，光滑，而有银色的晕圈，微微泛出淡青色。,rate:16000,code:000000,cost_time:2.00s
+2022-07-01 16:08:01,790 - ERROR - asr_resource.py:131 - post() - Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 99, in post
+    MP32WAV(filename,filename_new)
+  File "./online/http/resources/asr_resource.py", line 50, in MP32WAV
+    MP3_File = AudioSegment.from_mp3(mp3_path)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/site-packages/pydub/audio_segment.py", line 796, in from_mp3
+    return cls.from_file(file, 'mp3', parameters=parameters)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/site-packages/pydub/audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/site-packages/pydub/utils.py", line 279, in mediainfo_json
+    info = json.loads(output)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2022-07-01 16:08:01,793 - INFO - asr_resource.py:146 - post() - msg: Expecting value: line 1 column 1 (char 0), cost_time:0.16s
+2022-07-01 16:08:03,936 - INFO - asr_resource.py:128 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.10s
+2022-07-01 16:08:03,971 - ERROR - asr_resource.py:131 - post() - Parameter 'speech' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 102, in post
+    raise Exception(paramerr5)
+Exception: Parameter 'speech' can't be none .
+2022-07-01 16:08:03,971 - INFO - asr_resource.py:146 - post() - msg: Parameter 'speech' can't be none ., cost_time:0.00s
+2022-07-01 16:08:04,000 - ERROR - asr_resource.py:131 - post() - Parameter 'filename' should end with *.wav or *.mp3.
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 76, in post
+    assert  filename.endswith(".wav") or filename.endswith(".mp3") or filename.endswith(".pcm"),paramerr4
+AssertionError: Parameter 'filename' should end with *.wav or *.mp3.
+2022-07-01 16:08:04,000 - INFO - asr_resource.py:146 - post() - msg: Parameter 'filename' should end with *.wav or *.mp3., cost_time:0.00s
+2022-07-01 16:08:04,034 - ERROR - asr_resource.py:131 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-07-01 16:08:04,034 - INFO - asr_resource.py:146 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-07-01 16:08:04,315 - INFO - asr_resource.py:128 - post() - text:我觉得你这个阿婆不好吃，我想吃那个，不难了。,rate:16000,code:000000,cost_time:0.26s
+2022-07-01 16:08:04,337 - ERROR - asr_resource.py:131 - post() - None space
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 66, in post
+    assert data,Nonespace
+AssertionError: None space
+2022-07-01 16:08:04,338 - INFO - asr_resource.py:146 - post() - msg: None space, cost_time:0.00s
+2022-07-01 16:08:04,509 - INFO - asr_resource.py:128 - post() - text:我觉得你说的有问题。,rate:44100,code:000000,cost_time:0.15s

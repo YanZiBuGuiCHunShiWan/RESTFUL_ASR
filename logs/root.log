@@ -1,0 +1,68 @@
+2022-07-24 13:54:12,019 - INFO - checkpoint.py:14 - load_checkpoint() - Checkpoint: loading from checkpoint /home/tangtianchi/ASR_project/conf/20211025_conformer_exp/final.pt for GPU
+2022-07-24 13:54:14,563 - INFO - REST_WenetEngine.py:43 - __init__() - Model has initialized .
+2022-07-24 13:54:14,566 - INFO - server.py:33 - <module>() - server starts port 7777
+2022-07-24 13:54:40,966 - INFO - asr_resource.py:128 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.61s
+2022-07-24 13:54:41,060 - ERROR - asr_resource.py:131 - post() - Parameter 'filename' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 78, in post
+    raise Exception(paramerr3)
+Exception: Parameter 'filename' can't be none .
+2022-07-24 13:54:41,062 - INFO - asr_resource.py:146 - post() - msg: Parameter 'filename' can't be none ., cost_time:0.05s
+2022-07-24 13:54:41,094 - ERROR - asr_resource.py:131 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-07-24 13:54:41,094 - INFO - asr_resource.py:146 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-07-24 13:54:41,691 - INFO - asr_resource.py:128 - post() - text:更多的时候，不是季节拒绝了我们的热情，而是我们误解了季节的沉默。兵运，不会随便手啃你的选择。,rate:16000,code:000000,cost_time:0.57s
+2022-07-24 13:54:43,830 - INFO - asr_resource.py:128 - post() - text:那是力争上游的一种书，你值得干！笔直的枝，他的干呢，通常是把帐把高，像是加以人工词的，一丈以内，绝无旁支；它所有的支压呢，一律向上，并且紧紧靠拢，也像是加以人工，死的，成为一束，绝无横斜；一出，它的宽大的叶子，也是片片向上，几乎没有协商的，更不用说倒锤了，它的皮，光滑，而有银色的晕圈，微微泛出淡青色。,rate:16000,code:000000,cost_time:2.09s
+2022-07-24 13:54:43,979 - ERROR - asr_resource.py:131 - post() - Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 99, in post
+    MP32WAV(filename,filename_new)
+  File "./online/http/resources/asr_resource.py", line 50, in MP32WAV
+    MP3_File = AudioSegment.from_mp3(mp3_path)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/site-packages/pydub/audio_segment.py", line 796, in from_mp3
+    return cls.from_file(file, 'mp3', parameters=parameters)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/site-packages/pydub/audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/site-packages/pydub/utils.py", line 279, in mediainfo_json
+    info = json.loads(output)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/tangtianchi/anaconda3/envs/wenet/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2022-07-24 13:54:43,982 - INFO - asr_resource.py:146 - post() - msg: Expecting value: line 1 column 1 (char 0), cost_time:0.11s
+2022-07-24 13:54:46,142 - INFO - asr_resource.py:128 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.12s
+2022-07-24 13:54:46,177 - ERROR - asr_resource.py:131 - post() - Parameter 'speech' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 102, in post
+    raise Exception(paramerr5)
+Exception: Parameter 'speech' can't be none .
+2022-07-24 13:54:46,178 - INFO - asr_resource.py:146 - post() - msg: Parameter 'speech' can't be none ., cost_time:0.00s
+2022-07-24 13:54:46,200 - ERROR - asr_resource.py:131 - post() - Parameter 'filename' should end with *.wav or *.mp3.
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 76, in post
+    assert  filename.endswith(".wav") or filename.endswith(".mp3") or filename.endswith(".pcm"),paramerr4
+AssertionError: Parameter 'filename' should end with *.wav or *.mp3.
+2022-07-24 13:54:46,201 - INFO - asr_resource.py:146 - post() - msg: Parameter 'filename' should end with *.wav or *.mp3., cost_time:0.00s
+2022-07-24 13:54:46,225 - ERROR - asr_resource.py:131 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-07-24 13:54:46,225 - INFO - asr_resource.py:146 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-07-24 13:54:46,533 - INFO - asr_resource.py:128 - post() - text:我觉得你这个阿婆不好吃，我想吃那个，不难了。,rate:16000,code:000000,cost_time:0.28s
+2022-07-24 13:54:46,565 - ERROR - asr_resource.py:131 - post() - None space
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 66, in post
+    assert data,Nonespace
+AssertionError: None space
+2022-07-24 13:54:46,565 - INFO - asr_resource.py:146 - post() - msg: None space, cost_time:0.00s
+2022-07-24 13:54:46,866 - INFO - asr_resource.py:128 - post() - text:我觉得你说的有问题。,rate:44100,code:000000,cost_time:0.27s
+2022-07-24 16:58:30,173 - INFO - checkpoint.py:14 - load_checkpoint() - Checkpoint: loading from checkpoint /home/tangtianchi/ASR_project/conf/20211025_conformer_exp/final.pt for GPU
+2022-07-24 16:58:32,586 - INFO - REST_WenetEngine.py:43 - __init__() - Model has initialized .
+2022-07-24 16:58:32,589 - INFO - server.py:33 - <module>() - server starts port 7777

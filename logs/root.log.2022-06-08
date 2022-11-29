@@ -1,0 +1,220 @@
+2022-06-08 18:11:06,128 - INFO - checkpoint.py:14 - load_checkpoint() - Checkpoint: loading from checkpoint /home/tangtianchi/ASR_project/conf/20211025_conformer_exp/final.pt for GPU
+2022-06-08 18:11:08,666 - INFO - REST_WenetEngine.py:43 - __init__() - Model has initialized .
+2022-06-08 18:11:08,670 - INFO - server.py:33 - <module>() - server starts port 7777
+2022-06-08 18:11:34,233 - INFO - asr_resource.py:117 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.43s
+2022-06-08 18:11:34,278 - ERROR - asr_resource.py:120 - post() - Parameter 'filename' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 73, in post
+    raise Exception(paramerr3)
+Exception: Parameter 'filename' can't be none .
+2022-06-08 18:11:34,278 - INFO - asr_resource.py:135 - post() - msg: Parameter 'filename' can't be none ., cost_time:0.01s
+2022-06-08 18:11:34,302 - ERROR - asr_resource.py:120 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 86, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-06-08 18:11:34,303 - INFO - asr_resource.py:135 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-06-08 18:11:36,393 - INFO - asr_resource.py:117 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.06s
+2022-06-08 18:11:36,417 - ERROR - asr_resource.py:120 - post() - Parameter 'speech' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    raise Exception(paramerr5)
+Exception: Parameter 'speech' can't be none .
+2022-06-08 18:11:36,417 - INFO - asr_resource.py:135 - post() - msg: Parameter 'speech' can't be none ., cost_time:0.00s
+2022-06-08 18:11:36,432 - ERROR - asr_resource.py:120 - post() - Parameter 'filename' should end with *.wav .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 71, in post
+    assert  filename.endswith(".wav"),paramerr4
+AssertionError: Parameter 'filename' should end with *.wav .
+2022-06-08 18:11:36,432 - INFO - asr_resource.py:135 - post() - msg: Parameter 'filename' should end with *.wav ., cost_time:0.00s
+2022-06-08 18:11:36,447 - ERROR - asr_resource.py:120 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 86, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-06-08 18:11:36,447 - INFO - asr_resource.py:135 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-06-08 18:11:37,764 - INFO - asr_resource.py:117 - post() - text:年有季节，春、夏、秋、冬；日有季节，黑白交替，生命也该有季节，那是生、老、病、死。鲁迅等人说过：一个人，如果二十岁，郭英俊，三十岁，不强壮，四十岁，不富有，五十岁，不未至，那么，他这辈子，就别想英俊、强壮、富有和睿智了。这是西方人眼里的生命的季节。,rate:16000,code:000000,cost_time:1.29s
+2022-06-08 18:11:37,788 - ERROR - asr_resource.py:120 - post() - None space
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 61, in post
+    assert data,Nonespace
+AssertionError: None space
+2022-06-08 18:11:37,788 - INFO - asr_resource.py:135 - post() - msg: None space, cost_time:0.00s
+2022-06-08 18:11:38,019 - INFO - asr_resource.py:117 - post() - text:我觉得你说的有问题。,rate:44100,code:000000,cost_time:0.21s
+2022-06-08 18:24:51,967 - INFO - checkpoint.py:14 - load_checkpoint() - Checkpoint: loading from checkpoint /home/tangtianchi/ASR_project/conf/20211025_conformer_exp/final.pt for GPU
+2022-06-08 18:24:54,634 - INFO - REST_WenetEngine.py:43 - __init__() - Model has initialized .
+2022-06-08 18:24:54,638 - INFO - server.py:33 - <module>() - server starts port 7777
+2022-06-08 18:25:33,985 - INFO - asr_resource.py:117 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.65s
+2022-06-08 18:25:34,066 - ERROR - asr_resource.py:120 - post() - Parameter 'filename' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 73, in post
+    raise Exception(paramerr3)
+Exception: Parameter 'filename' can't be none .
+2022-06-08 18:25:34,067 - INFO - asr_resource.py:135 - post() - msg: Parameter 'filename' can't be none ., cost_time:0.05s
+2022-06-08 18:25:34,090 - ERROR - asr_resource.py:120 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 86, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-06-08 18:25:34,090 - INFO - asr_resource.py:135 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-06-08 18:25:36,212 - INFO - asr_resource.py:117 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.10s
+2022-06-08 18:25:36,236 - ERROR - asr_resource.py:120 - post() - Parameter 'speech' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    raise Exception(paramerr5)
+Exception: Parameter 'speech' can't be none .
+2022-06-08 18:25:36,237 - INFO - asr_resource.py:135 - post() - msg: Parameter 'speech' can't be none ., cost_time:0.00s
+2022-06-08 18:25:36,251 - ERROR - asr_resource.py:120 - post() - Parameter 'filename' should end with *.wav .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 71, in post
+    assert  filename.endswith(".wav"),paramerr4
+AssertionError: Parameter 'filename' should end with *.wav .
+2022-06-08 18:25:36,251 - INFO - asr_resource.py:135 - post() - msg: Parameter 'filename' should end with *.wav ., cost_time:0.00s
+2022-06-08 18:25:36,266 - ERROR - asr_resource.py:120 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 86, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-06-08 18:25:36,267 - INFO - asr_resource.py:135 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-06-08 18:25:37,683 - INFO - asr_resource.py:117 - post() - text:年有季节，春、夏、秋、冬；日有季节，黑白交替，生命也该有季节，那是生、老、病、死。鲁迅等人说过：一个人，如果二十岁，郭英俊，三十岁，不强壮，四十岁，不富有，五十岁，不未至，那么，他这辈子，就别想英俊、强壮、富有和睿智了。这是西方人眼里的生命的季节。,rate:16000,code:000000,cost_time:1.39s
+2022-06-08 18:25:37,706 - ERROR - asr_resource.py:120 - post() - None space
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 61, in post
+    assert data,Nonespace
+AssertionError: None space
+2022-06-08 18:25:37,706 - INFO - asr_resource.py:135 - post() - msg: None space, cost_time:0.00s
+2022-06-08 18:25:38,029 - INFO - asr_resource.py:117 - post() - text:我觉得你说的有问题。,rate:44100,code:000000,cost_time:0.30s
+2022-06-08 18:38:36,298 - INFO - asr_resource.py:117 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.09s
+2022-06-08 18:38:36,396 - ERROR - asr_resource.py:120 - post() - Parameter 'filename' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 73, in post
+    raise Exception(paramerr3)
+Exception: Parameter 'filename' can't be none .
+2022-06-08 18:38:36,396 - INFO - asr_resource.py:135 - post() - msg: Parameter 'filename' can't be none ., cost_time:0.05s
+2022-06-08 18:38:36,470 - ERROR - asr_resource.py:120 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 86, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-06-08 18:38:36,470 - INFO - asr_resource.py:135 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.04s
+2022-06-08 18:38:37,076 - INFO - asr_resource.py:117 - post() - text:更多的时候，不是季节拒绝了我们的热情，而是我们误解了季节的沉默。兵运，不会随便手啃你的选择。,rate:16000,code:000000,cost_time:0.57s
+2022-06-08 18:38:39,203 - INFO - asr_resource.py:117 - post() - text:那是力争上游的一种书，你值得干！笔直的枝，他的干呢，通常是把帐把高，像是加以人工词的，一丈以内，绝无旁支；它所有的支压呢，一律向上，并且紧紧靠拢，也像是加以人工，死的，成为一束，绝无横斜；一出，它的宽大的叶子，也是片片向上，几乎没有协商的，更不用说倒锤了，它的皮，光滑，而有银色的晕圈，微微泛出淡青色。,rate:16000,code:000000,cost_time:2.08s
+2022-06-08 18:38:41,255 - INFO - asr_resource.py:117 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.01s
+2022-06-08 18:38:41,288 - ERROR - asr_resource.py:120 - post() - Parameter 'speech' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    raise Exception(paramerr5)
+Exception: Parameter 'speech' can't be none .
+2022-06-08 18:38:41,288 - INFO - asr_resource.py:135 - post() - msg: Parameter 'speech' can't be none ., cost_time:0.00s
+2022-06-08 18:38:41,311 - ERROR - asr_resource.py:120 - post() - Parameter 'filename' should end with *.wav .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 71, in post
+    assert  filename.endswith(".wav"),paramerr4
+AssertionError: Parameter 'filename' should end with *.wav .
+2022-06-08 18:38:41,312 - INFO - asr_resource.py:135 - post() - msg: Parameter 'filename' should end with *.wav ., cost_time:0.00s
+2022-06-08 18:38:41,335 - ERROR - asr_resource.py:120 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 86, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-06-08 18:38:41,335 - INFO - asr_resource.py:135 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-06-08 18:38:42,839 - INFO - asr_resource.py:117 - post() - text:年有季节，春、夏、秋、冬；日有季节，黑白交替，生命也该有季节，那是生、老、病、死。鲁迅等人说过：一个人，如果二十岁，郭英俊，三十岁，不强壮，四十岁，不富有，五十岁，不未至，那么，他这辈子，就别想英俊、强壮、富有和睿智了。这是西方人眼里的生命的季节。,rate:16000,code:000000,cost_time:1.47s
+2022-06-08 18:38:42,872 - ERROR - asr_resource.py:120 - post() - None space
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 61, in post
+    assert data,Nonespace
+AssertionError: None space
+2022-06-08 18:38:42,872 - INFO - asr_resource.py:135 - post() - msg: None space, cost_time:0.00s
+2022-06-08 18:38:43,059 - INFO - asr_resource.py:117 - post() - text:我觉得你说的有问题。,rate:44100,code:000000,cost_time:0.16s
+2022-06-08 18:57:51,480 - INFO - checkpoint.py:14 - load_checkpoint() - Checkpoint: loading from checkpoint /home/tangtianchi/ASR_project/conf/20211025_conformer_exp/final.pt for GPU
+2022-06-08 18:57:53,929 - INFO - REST_WenetEngine.py:43 - __init__() - Model has initialized .
+2022-06-08 18:57:53,933 - INFO - server.py:33 - <module>() - server starts port 7777
+2022-06-08 18:58:16,380 - INFO - asr_resource.py:117 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.49s
+2022-06-08 18:58:16,484 - ERROR - asr_resource.py:120 - post() - Parameter 'filename' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 73, in post
+    raise Exception(paramerr3)
+Exception: Parameter 'filename' can't be none .
+2022-06-08 18:58:16,485 - INFO - asr_resource.py:135 - post() - msg: Parameter 'filename' can't be none ., cost_time:0.05s
+2022-06-08 18:58:16,526 - ERROR - asr_resource.py:120 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 86, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-06-08 18:58:16,527 - INFO - asr_resource.py:135 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-06-08 18:58:17,105 - INFO - asr_resource.py:117 - post() - text:更多的时候，不是季节拒绝了我们的热情，而是我们误解了季节的沉默。兵运，不会随便手啃你的选择。,rate:16000,code:000000,cost_time:0.54s
+2022-06-08 18:58:19,162 - INFO - asr_resource.py:117 - post() - text:那是力争上游的一种书，你值得干！笔直的枝，他的干呢，通常是把帐把高，像是加以人工词的，一丈以内，绝无旁支；它所有的支压呢，一律向上，并且紧紧靠拢，也像是加以人工，死的，成为一束，绝无横斜；一出，它的宽大的叶子，也是片片向上，几乎没有协商的，更不用说倒锤了，它的皮，光滑，而有银色的晕圈，微微泛出淡青色。,rate:16000,code:000000,cost_time:2.00s
+2022-06-08 18:58:21,869 - INFO - asr_resource.py:117 - post() - text:冬天，用严酷，拒绝怯懦的忧郁，却用热情迎接勇敢的拥抱，躲进温暖的小屋，期盼春天的温情，一定无法品味到冬天的生命，拒绝了冬天的严酷，也就拒绝了铸就坚强的良机；夏日，用烦躁，拒绝急切的奢侈，却用茂盛回报辛劳的投入，躺在明月清风中，梦想金秋的丰硕，以及有可能被半夜呼来的风雨，经各部知所措，拒绝了夏日的烦躁，也就拒绝了支撑生长的土壤；更多的时候，不是季节拒绝了我们的热情，而是我们误解了季节的沉默，岁月，也不会轻易渐进你的历程。,rate:16000,code:000000,cost_time:2.65s
+2022-06-08 18:58:23,908 - INFO - asr_resource.py:117 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:1.99s
+2022-06-08 18:58:23,946 - ERROR - asr_resource.py:120 - post() - Parameter 'speech' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    raise Exception(paramerr5)
+Exception: Parameter 'speech' can't be none .
+2022-06-08 18:58:23,947 - INFO - asr_resource.py:135 - post() - msg: Parameter 'speech' can't be none ., cost_time:0.00s
+2022-06-08 18:58:23,978 - ERROR - asr_resource.py:120 - post() - Parameter 'filename' should end with *.wav .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 71, in post
+    assert  filename.endswith(".wav"),paramerr4
+AssertionError: Parameter 'filename' should end with *.wav .
+2022-06-08 18:58:23,978 - INFO - asr_resource.py:135 - post() - msg: Parameter 'filename' should end with *.wav ., cost_time:0.00s
+2022-06-08 18:58:24,009 - ERROR - asr_resource.py:120 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 86, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-06-08 18:58:24,009 - INFO - asr_resource.py:135 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-06-08 18:58:25,500 - INFO - asr_resource.py:117 - post() - text:年有季节，春、夏、秋、冬；日有季节，黑白交替，生命也该有季节，那是生、老、病、死。鲁迅等人说过：一个人，如果二十岁，郭英俊，三十岁，不强壮，四十岁，不富有，五十岁，不未至，那么，他这辈子，就别想英俊、强壮、富有和睿智了。这是西方人眼里的生命的季节。,rate:16000,code:000000,cost_time:1.45s
+2022-06-08 18:58:25,540 - ERROR - asr_resource.py:120 - post() - None space
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 61, in post
+    assert data,Nonespace
+AssertionError: None space
+2022-06-08 18:58:25,541 - INFO - asr_resource.py:135 - post() - msg: None space, cost_time:0.00s
+2022-06-08 18:58:25,759 - INFO - asr_resource.py:117 - post() - text:我觉得你说的有问题。,rate:44100,code:000000,cost_time:0.18s
+2022-06-08 19:09:24,774 - INFO - checkpoint.py:14 - load_checkpoint() - Checkpoint: loading from checkpoint /home/tangtianchi/ASR_project/conf/20211025_conformer_exp/final.pt for GPU
+2022-06-08 19:09:27,358 - INFO - REST_WenetEngine.py:43 - __init__() - Model has initialized .
+2022-06-08 19:09:27,362 - INFO - server.py:33 - <module>() - server starts port 7777
+2022-06-08 19:09:34,785 - INFO - asr_resource.py:117 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:3.08s
+2022-06-08 19:09:34,892 - ERROR - asr_resource.py:120 - post() - Parameter 'filename' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 73, in post
+    raise Exception(paramerr3)
+Exception: Parameter 'filename' can't be none .
+2022-06-08 19:09:34,893 - INFO - asr_resource.py:135 - post() - msg: Parameter 'filename' can't be none ., cost_time:0.05s
+2022-06-08 19:09:34,935 - ERROR - asr_resource.py:120 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 86, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-06-08 19:09:34,935 - INFO - asr_resource.py:135 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-06-08 19:09:35,529 - INFO - asr_resource.py:117 - post() - text:更多的时候，不是季节拒绝了我们的热情，而是我们误解了季节的沉默。兵运，不会随便手啃你的选择。,rate:16000,code:000000,cost_time:0.56s
+2022-06-08 19:09:38,196 - INFO - asr_resource.py:117 - post() - text:那是力争上游的一种书，你值得干！笔直的枝，他的干呢，通常是把帐把高，像是加以人工词的，一丈以内，绝无旁支；它所有的支压呢，一律向上，并且紧紧靠拢，也像是加以人工，死的，成为一束，绝无横斜；一出，它的宽大的叶子，也是片片向上，几乎没有协商的，更不用说倒锤了，它的皮，光滑，而有银色的晕圈，微微泛出淡青色。,rate:16000,code:000000,cost_time:2.61s
+2022-06-08 19:09:40,727 - INFO - asr_resource.py:117 - post() - text:冬天，用严酷，拒绝怯懦的忧郁，却用热情迎接勇敢的拥抱，躲进温暖的小屋，期盼春天的温情，一定无法品味到冬天的生命，拒绝了冬天的严酷，也就拒绝了铸就坚强的良机；夏日，用烦躁，拒绝急切的奢侈，却用茂盛回报辛劳的投入，躺在明月清风中，梦想金秋的丰硕，以及有可能被半夜呼来的风雨，经各部知所措，拒绝了夏日的烦躁，也就拒绝了支撑生长的土壤；更多的时候，不是季节拒绝了我们的热情，而是我们误解了季节的沉默，岁月，也不会轻易渐进你的历程。,rate:16000,code:000000,cost_time:2.47s
+2022-06-08 19:09:43,410 - INFO - asr_resource.py:117 - post() - text:没有什么是一成不变的，生活，就像自然，有阳春，也有金秋，有库下，也有寒冬，走运和倒霉，都不可能持续很久，对于突然情况，如果没有充分的思想准备，那么，厄运就会像大海的波涛一样，在你生活的海岸上，忽起呼落，拍打不停，相应的高潮和低潮，日出和日落，富有和贫穷，快乐和失望，将应运而生，做好最坏的准备！别羡慕那些春风得意的骄子，他们往往是脆弱的，一旦面临灾祸，就会束手无策。,rate:16000,code:000000,cost_time:2.63s
+2022-06-08 19:09:43,452 - ERROR - asr_resource.py:120 - post() - Parameter 'speech' can't be none .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 92, in post
+    raise Exception(paramerr5)
+Exception: Parameter 'speech' can't be none .
+2022-06-08 19:09:43,452 - INFO - asr_resource.py:135 - post() - msg: Parameter 'speech' can't be none ., cost_time:0.00s
+2022-06-08 19:09:43,483 - ERROR - asr_resource.py:120 - post() - Parameter 'filename' should end with *.wav .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 71, in post
+    assert  filename.endswith(".wav"),paramerr4
+AssertionError: Parameter 'filename' should end with *.wav .
+2022-06-08 19:09:43,483 - INFO - asr_resource.py:135 - post() - msg: Parameter 'filename' should end with *.wav ., cost_time:0.00s
+2022-06-08 19:09:43,514 - ERROR - asr_resource.py:120 - post() - Invalid base64-encode string or format err .
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 86, in post
+    assert "WAVEfmt" in decode_info[:15].decode("unicode_escape"),Invalid_bs64code
+AssertionError: Invalid base64-encode string or format err .
+2022-06-08 19:09:43,514 - INFO - asr_resource.py:135 - post() - msg: Invalid base64-encode string or format err ., cost_time:0.00s
+2022-06-08 19:09:44,929 - INFO - asr_resource.py:117 - post() - text:年有季节，春、夏、秋、冬；日有季节，黑白交替，生命也该有季节，那是生、老、病、死。鲁迅等人说过：一个人，如果二十岁，郭英俊，三十岁，不强壮，四十岁，不富有，五十岁，不未至，那么，他这辈子，就别想英俊、强壮、富有和睿智了。这是西方人眼里的生命的季节。,rate:16000,code:000000,cost_time:1.37s
+2022-06-08 19:09:44,968 - ERROR - asr_resource.py:120 - post() - None space
+Traceback (most recent call last):
+  File "./online/http/resources/asr_resource.py", line 61, in post
+    assert data,Nonespace
+AssertionError: None space
+2022-06-08 19:09:44,968 - INFO - asr_resource.py:135 - post() - msg: None space, cost_time:0.00s
+2022-06-08 19:09:45,155 - INFO - asr_resource.py:117 - post() - text:我觉得你说的有问题。,rate:44100,code:000000,cost_time:0.15s
