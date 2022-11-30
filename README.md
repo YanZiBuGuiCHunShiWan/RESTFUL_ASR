@@ -12,7 +12,7 @@
 
 效果展示：
 
-![1](./src/1.jpg)
+![1](https://github.com/YanZiBuGuiCHunShiWan/RESTFUL_ASR/tree/main/src/1.jpg)
 
 
 
